@@ -9,7 +9,7 @@ const signJwt = (id ) => {
         expiresIn:JWT_EXPIRES
     })
 }
-//Send Token to User
+//Send Token to User.
 
 const sendToken = (user,statusCode , req , res) => {
     const  token = signJwt(user._id)
