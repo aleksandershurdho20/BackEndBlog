@@ -30,3 +30,8 @@ const port = process.env.port || 5000;
 app.listen(port, () =>{
     console.log(`listening at port ${port}`)
 })
+
+// if(process.env.NODE_ENV === 'production'){
+//     app.use(express.static('build'))
+//     app.get('')
+// }
